@@ -1,0 +1,55 @@
+@font-face{
+	font-family:Dirtyboy;
+	src:url(../fonts/Dirtyboy.ttf);
+}
+
+body {
+	background-color: white;
+	text-align: justify;
+} 
+
+.hola{
+	font-family:Dirtyboy;
+}
+
+/*Rule #2 */
+#important1{
+	font-size:400%;
+}
+
+#important2{
+	text-transform:capitalize;
+}
+
+
+p {
+	color: blue;
+}
+
+p:hover {
+  color: #FF00FF;
+}
+
+/* change hello class to green */
+p[class]{
+	color: green;
+}
+
+p::first-line{
+	color:red;
+	font-size: 40px;
+}
+
+#important2:hover{
+	color:pink;
+}
+
+div.mynav{
+	height:100px;
+	background-color:black;
+	border-width:10px;
+	border-color:red;
+	border-style:solid;
+	padding:20%;
+	margin:30%;
+}
