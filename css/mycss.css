@@ -1,0 +1,110 @@
+@font-face {
+	font-family: "Revoinex"; 
+	src: url("../fonts/Revoinex.ttf");
+} 
+
+
+/*
+#7b3f00	(123,63,0). //brown
+#d8b88b	(216,184,139) //tan
+#2e4a3d	(46,74,61) //green
+#bbbbbb	(187,187,187) //gray 
+*/
+
+
+body{
+	background-color: #bbbbbb;
+	background-image: url('../images/rockbackground.jpg');
+	background-attachment:fixed;
+}
+
+h1 {
+	/*color: rgb(200,0,200);*/
+	color: #2e4a3d;
+	font-family: "Revoinex";
+}
+
+/* stylize some spacing of my "rocky" div box!*/
+div.rocky{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	border-style:solid;
+	border-width:20px;
+	border-color:#2e4a3d;
+	padding:20px;
+	min-width: 500px;
+	max-width: 1000px;
+	background-color: rgba(255,255,255,0.80);
+}
+
+h1{
+	background-color: rgba(255,255,255,0.80);
+
+}
+
+#rockyphoto{
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	width:50%;
+	border-style:solid;
+	border-width:10px;
+	border-color:red;
+}
+
+#rockysfaves{
+list-style-position: inside;
+list-style-type: upper-roman;
+}
+
+#usertext{
+	background-color:#EEEEEE;
+}
+
+#usertext:hover{
+	background-color:#FF0000;
+}
+
+#usertext:focus{
+	background-color:yellow;
+}
+
+.gridelement{
+	border-style: solid;
+	border-color: red;
+	border-width: 2px;
+}
+
+.mygrid{
+	display: grid;
+	/* This will result on four columns, each one of 1fr */ 
+	/*grid-template-columns: 1fr 1fr 1fr; */
+	/*grid-template-columns: repeat(3,1fr); */
+	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+	
+	/* This will result on two rows, each one of 300px */ 
+	/*grid-template-rows: 300px 300px; */
+	/*grid-template-rows:  repeat(2,200px); */
+	/*grid-template-rows: repeat(auto-fit, minmax(100px, 1fr));*/
+	border-style: solid;
+	border-color: green;
+	border-width: 2px;
+}
+
+
+@media only screen and (max-width: 767px) {
+	div.rocky{
+		border-color:black;
+		background-color:white;
+	}
+	
+	#rockyphoto{
+		border-color:pink;
+	}
+	
+}
+
+
+
+
